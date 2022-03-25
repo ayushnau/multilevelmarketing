@@ -1,0 +1,127 @@
+*,body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    padding: 0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+.header{
+    padding: 1em 3em;
+    position: sticky;
+    top: 0;
+    background-color: #fffef2;
+    z-index: 10;
+}
+.headerTop{
+    display: flex;
+}
+.headerTop >*{
+    flex: 1;
+    /* border: 3px solid red; */
+}
+.headerTopsecond{
+    align-items: center;
+}
+.headerTopsecond .imagecontainer{
+    width: 100%;
+    height: 100%;
+}
+.imagecontainer img{
+    display: block;
+    margin-left: 28%;
+    margin-right: auto;
+    object-fit: cover;
+}
+.headerTopThird .social
+{
+    margin-top: 10%;
+    text-align: center;
+}
+.social > *{
+    margin-left: 4%;
+}
+
+.Navbar{
+    width: 100%;
+    /* border: 3px solid red; */
+    font-size: .9em;
+}
+.NavbarContainer{
+    /* border: 3px solid red; */
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin: 0 auto;
+}
+.navbarlist{
+    /* border: 3px solid red; */
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-basis: 60%;
+    justify-content: space-around;
+}
+.navbarlist li{
+    margin-left: 3%;
+    white-space: nowrap;
+}
+.signinbutton{
+    flex-basis: 20%;
+    text-align: right;
+}
+.signin{
+    padding:1.4em 37px;
+    background:#2C3626;
+    outline: none;
+    border: #ccc5fa 3px solid;
+    border-radius: 10px;
+    white-space: nowrap;
+    color: white;
+    font-weight: 700;
+}
+.hamburger{
+    display: none;
+    position: absolute;
+    top: 90px;
+}
+
+
+@media (max-width:1000px){
+    .NavbarContainer{
+        justify-content: space-between;
+    }
+}
+@media (max-width:950px){
+    .Navbar{
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .hamburger{
+        display: initial;
+    }
+    .NavbarContainer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbarlist{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbarlist li{
+        margin-top: 2em;
+    }
+    .upper{
+        display: none;
+    }
+
+}

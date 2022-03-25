@@ -1,0 +1,27 @@
+.Whyuscontainer{
+    font-family: Poppins,'sans-serif';
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 8em;
+}
+.Whyuscontainer[data-scroll="in"]
+{
+   background-color: black;
+}
+
+.Whyusheading{
+    font-size: 1.9em;
+    font-weight: 700;
+}
+.Whyuspara{
+    margin-top: 1em;
+    color: #6a7695;
+}
+.carecontainer{
+    margin-top: 9em;
+}
+.carecontainer img{
+    width: 100%;
+    object-fit: cover;
+}
