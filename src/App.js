@@ -11,7 +11,7 @@ const App = () => {
     <Navbar/>
     <Carousel/>
     <WhyusPage/>
-    <Products/>
+    {/* <Products/> */}
     <Feature/>
     <Footer/>
 
